@@ -1,5 +1,8 @@
-﻿namespace XP_FP_Workshop
+﻿using System.Diagnostics.Contracts;
+
+namespace XP_FP_Workshop
 {
+    [Pure]
     public class MedicalItems
     {
         public readonly string Paracetamol;
