@@ -1,13 +1,22 @@
-﻿using System.Diagnostics.Contracts;
-
-namespace XP_FP_Workshop
+﻿namespace XP_FP_Workshop
 {
-    [Pure]
-    public class MedicalItems
+    public enum Items
     {
-        public readonly string Paracetamol;
-        public readonly string Ibuprofen;
-        public readonly string Syringe;
-        public readonly string Scalpel;
+        Paracetamol,
+        Ibuprofen,
+        Syringe,
+        Scalpel
+    }
+
+    public class MedicalItem
+    {
+        public readonly Items Name;
+        public readonly int Quantity;
+
+        public MedicalItem(Items Name, int Quantity)
+        {
+            this.Name = Name;
+            this.Quantity = Quantity;
+        }
     }
 }

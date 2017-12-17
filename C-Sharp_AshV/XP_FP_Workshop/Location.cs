@@ -7,6 +7,12 @@ namespace XP_FP_Workshop
     public class Location
     {
         public readonly string Name;
-        public readonly List<MedicalItems> Stock;
+        public readonly PureList<MedicalItem> Stock;
+
+        public Location(string Name, PureList<MedicalItem> Stock)
+        {
+            this.Name = Name;
+            this.Stock = Stock;
+        }
     }
 }
